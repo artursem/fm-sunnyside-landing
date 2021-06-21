@@ -6,26 +6,30 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <script src="./app.js"></script>
+  <script src="./app.js" defer></script>
   <title>Sunnyside agency landing page | Frontend Mentor</title>
 </head>
 <body>
   <header>
-    <img src="./images/logo.svg" alt="sunnyside logo">
-    <img src="./images/icon-hamburger.svg" alt="menu">
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="topbar">
+      <img src="./images/logo.svg" alt="sunnyside logo">
+      <img src="./images/icon-hamburger.svg" alt="menu">
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>We are creatives</h1>
+
+      <img src="./images/icon-arrow-down.svg" alt="scroll down" id="arrow">
+
+    </div>
   </header>
-  <section class="hero">
-    <h1>We are creatives</h1>
-    <img src="./images/icon-arrow-down.svg" alt="scroll down" id="arrow">
-  </section>
   <section class="egg">
 
   </section>
@@ -61,19 +65,19 @@
   </section>
   <section class="testimonials">
     <h3>client testimonials</h3>
-    <div class="client">
+    <div class="testimonials__client">
       <img src="./images/image-emily.jpg" alt="emily">
       <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
       <div class="name">Emily R.</div>
       <div class="role">Marketing Director</div>
     </div>
-    <div class="client">
+    <div class="testimonials__client">
       <img src="./images/image-thomas.jpg" alt="thom">
       <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
       <div class="name">Thomas S.</div>
       <div class="role">Chief Operating Officer</div>
     </div>
-    <div class="client">
+    <div class="testimonials__client">
       <img src="./images/image-jennie.jpg" alt="jennie">
       <p>
         Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
@@ -82,12 +86,19 @@
       <div class="role">Business Owner</div>
     </div>
   </section>
-  <div class="img-01"></div>
-  <div class="img-02"></div>
-  <div class="img-03"></div>
-  <div class="img-04"></div>  
+  <section class="images">
+    <div class="img-01"></div>
+    <div class="img-02"></div>
+    <div class="img-03"></div>
+    <div class="img-04"></div> 
+  </section>
   <footer>
-    <img src="./images/logo.svg" alt="logo">
+    <!-- <img src="./images/logo.svg" alt="logo"> -->
+    <!-- <object data="./images/logo.svg" type="image/svg+xml"></object> -->
+    <span class="footer__logo">
+      
+    </span>
+
     <div class="footer__links">
       <a href="#">About</a>
       <a href="#">Services</a>
