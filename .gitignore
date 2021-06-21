@@ -15,6 +15,6 @@
 .DS_Store
 .prettierignore
 
-.style.scss
+style.scss
 
 style.css.map
