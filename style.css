@@ -49,9 +49,6 @@ header .hero h1 {
 header .hero img {
   padding: 2rem;
 }
-header nav {
-  display: none;
-}
 
 .egg, .glass {
   background-size: cover;
@@ -264,6 +261,10 @@ footer .footer__socials a {
     height: 100vw;
     grid-template-areas: "img-01 img-02" "img-03 img-04";
   }
+
+  nav {
+    display: none;
+  }
 }
 @media screen and (min-width: 701px) {
   body {
@@ -273,7 +274,7 @@ footer .footer__socials a {
   }
 
   header {
-    min-height: 0rem;
+    padding: 0.5rem;
     background: url("./images/desktop/image-header.jpg") bottom no-repeat;
     background-size: cover;
   }
@@ -290,6 +291,48 @@ footer .footer__socials a {
   .images {
     height: 25vw;
     grid-template-areas: "img-01 img-02 img-03 img-04";
+  }
+
+  #burger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+  }
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+  nav ul li a {
+    font-family: "Barlow", sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: block;
+    height: 2.2rem;
+    padding: 0.6rem;
+    border-radius: 3rem;
+    background-color: none;
+  }
+  nav ul li a:hover {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    background-color: #6DCCFC;
+  }
+  nav ul li a:active {
+    color: #19536b;
+    background-color: white;
   }
 }
 

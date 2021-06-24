@@ -1,3 +1,4 @@
+@use "sass:color";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 $barlow: 'Barlow', sans-serif;
 $fraunces: 'Fraunces', serif;
@@ -10,6 +11,8 @@ $cyan: hsl(167, 40%, 24%);    // (graphic design text)
 $blue: hsl(198, 62%, 26%);   //  (photography text)
 $darkcyan: hsl(168, 34%, 41%);   // (footer)
 $lightcyan:  hsl(168, 34%, 67%);
+
+$blue-opac: #6DCCFC;
 
 $dark: hsl(212, 27%, 19%);
 $grayblue: hsl(213, 9%, 39%);
@@ -52,7 +55,6 @@ h1, h2, h3 {
 
 header {
     grid-area: header;
-
     .topbar {
         display: flex;
         flex-direction: row;
@@ -79,10 +81,6 @@ header {
 
             // arrow animation !!!!!!!!!!!!!!!!!
         }
-    }
-
-    nav {
-        display: none;
     }
 }
 
@@ -318,6 +316,12 @@ footer {
         grid-template-areas:    "img-01 img-02"
                                 "img-03 img-04";
     }
+
+    nav {
+        display: none;
+    }
+
+
 }
 
 
@@ -335,7 +339,8 @@ footer {
                                 "footer footer";
     }
     header {
-        min-height: 0rem;
+        padding: .5rem;
+        
         background: url('./images/desktop/image-header.jpg') bottom no-repeat; 
         background-size: cover;
     }
@@ -354,5 +359,53 @@ footer {
     .images {
         height: 25vw;
         grid-template-areas: "img-01 img-02 img-03 img-04";
+    }
+
+    #burger {
+        display: none;
+    }
+    nav {
+        display: block;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 450px;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+
+
+
+                a {
+                    font-family: $barlow;
+                    color: white;
+                    font-size: 0.8rem;
+                    text-decoration: none;
+
+                    display: block;
+                    height: 2.2rem;
+                    padding: .6rem;
+                    border-radius: 3rem;
+                    
+                    background-color: none;
+                }
+                a:hover {
+                    text-transform: uppercase;
+                    font-family: $fraunces;
+                    background-color: $blue-opac;
+                }
+                a:active {
+                    color: $blue;
+                    background-color: white;
+                }
+
+            }
+        }
     }
 }
