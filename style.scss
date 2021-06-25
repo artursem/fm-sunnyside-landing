@@ -301,6 +301,8 @@ footer {
         background: url('./images/mobile/image-header.jpg') bottom no-repeat; 
         background-size: cover;
         #burger {
+            border: none;
+            background: none;
             cursor: pointer;
             // filter: opacity(0.3);
         }
@@ -427,8 +429,6 @@ footer {
         background-size: cover;
         
     }
-
-    // url to desktop bg !!!!!!!!!!
 
     .graphic-design {
         background: url('./images/desktop/image-graphic-design.jpg') top center no-repeat;

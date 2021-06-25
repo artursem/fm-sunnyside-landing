@@ -234,6 +234,8 @@ footer .footer__socials a {
     background-size: cover;
   }
   header #burger {
+    border: none;
+    background: none;
     cursor: pointer;
   }
 
