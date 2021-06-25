@@ -235,13 +235,7 @@ header {
     grid-template-rows: auto;
     // #####################
 
-    @for $i from 1 through 4 {
-        .img-0#{$i} {
-            background: url('./images/mobile/image-gallery-0#{$i}.jpg') top center no-repeat;
-            background-size: cover;
-            grid-area: img-0#{$i};
-        }
-    }
+    
 }
 
 footer {
@@ -323,6 +317,14 @@ footer {
         height: 100vw;
         grid-template-areas:    "img-01 img-02"
                                 "img-03 img-04";
+
+        @for $i from 1 through 4 {
+            .img-0#{$i} {
+                background: url('./images/desktop/image-gallery-0#{$i}.jpg') top center no-repeat;
+                background-size: cover;
+                grid-area: img-0#{$i};
+            }
+        }
     }
 
     nav {
@@ -386,6 +388,22 @@ footer {
     }
 
 
+
+    .egg {
+        background: url('./images/mobile/image-transform.jpg') center center no-repeat;
+    }
+    
+    .glass {
+        background: url('./images/mobile/image-stand-out.jpg') center center no-repeat;
+    }
+
+    .graphic-design {
+        background: url('./images/mobile/image-graphic-design.jpg') top center no-repeat;
+    }
+
+    .photography {
+        background: url('./images/mobile/image-photography.jpg') top center no-repeat;
+    }
 }
 
 
@@ -412,6 +430,20 @@ footer {
 
     // url to desktop bg !!!!!!!!!!
 
+    .graphic-design {
+        background: url('./images/desktop/image-graphic-design.jpg') top center no-repeat;
+    }
+
+    .photography {
+        background: url('./images/desktop/image-photography.jpg') top center no-repeat;
+    }
+    .egg {
+        background: url('./images/desktop/image-transform.jpg') center center no-repeat;
+    }
+    
+    .glass {
+        background: url('./images/desktop/image-stand-out.jpg') center center no-repeat;
+    }
 
     .egg, .glass, .transform-brand, .stand-out{
         height: 50vw;
@@ -424,6 +456,13 @@ footer {
     .images {
         height: 25vw;
         grid-template-areas: "img-01 img-02 img-03 img-04";
+        @for $i from 1 through 4 {
+            .img-0#{$i} {
+                background: url('./images/mobile/image-gallery-0#{$i}.jpg') top center no-repeat;
+                background-size: cover;
+                grid-area: img-0#{$i};
+            }
+        }
     }
 
     #burger {
@@ -473,3 +512,5 @@ footer {
         }
     }
 }
+
+
