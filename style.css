@@ -16,10 +16,16 @@ body {
   min-height: 100vh;
   display: grid;
   gap: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 body > * {
   text-align: center;
+}
+
+div, section, header, footer {
+  scroll-snap-align: start;
 }
 
 h1, h2, h3 {
@@ -263,7 +269,36 @@ footer .footer__socials a {
   }
 
   nav {
-    display: none;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 80vw;
+  }
+  nav ul {
+    list-style: none;
+  }
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  nav::before {
+    position: relative;
+    top: -2rem;
+    left: calc(40vw - 1rem);
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background: white;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
 }
 @media screen and (min-width: 701px) {

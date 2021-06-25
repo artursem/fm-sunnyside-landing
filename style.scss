@@ -39,6 +39,8 @@ body {
     display: grid;
     gap: 0;
 
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 body>* {
@@ -46,6 +48,7 @@ body>* {
 }
 
 div, section, header, footer {
+    scroll-snap-align: start;
     // border: 1px dashed yellowgreen; // ######################
 }
 
@@ -318,7 +321,43 @@ footer {
     }
 
     nav {
-        display: none;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: white;
+        width: 80vw;
+        ul {
+            
+            list-style: none;
+
+
+            li {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        &::before {
+            position: relative;
+            top: -2rem;
+            left: calc(40vw - 1rem);
+
+            content: '';
+            height: 2rem;
+            width: 2rem;
+            background: white;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        }
+        // display: none;
     }
 
 
@@ -404,7 +443,6 @@ footer {
                     color: $blue;
                     background-color: white;
                 }
-
             }
         }
     }
