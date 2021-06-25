@@ -253,6 +253,9 @@ footer .footer__socials a {
     background: url("./images/mobile/image-header.jpg") bottom no-repeat;
     background-size: cover;
   }
+  header #burger {
+    cursor: pointer;
+  }
 
   .egg, .glass, .transform-brand, .stand-out {
     background-size: cover;
@@ -282,13 +285,31 @@ footer .footer__socials a {
     align-items: center;
     background-color: white;
     width: 80vw;
+    display: none;
   }
   nav ul {
     list-style: none;
   }
   nav ul li {
     margin: 0;
-    padding: 0;
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  nav ul li a {
+    font-family: "Barlow", sans-serif;
+    color: #818498;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: block;
+    height: 3rem;
+    padding: 0.8rem;
+    border-radius: 3rem;
+    background-color: none;
+  }
+  nav ul li a:hover, nav ul li a:active {
+    color: black;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    background-color: #fad400;
   }
   nav::before {
     position: relative;

@@ -70,6 +70,7 @@ header {
         img {
             padding: 0.8rem;
         }
+        
     }
 
     .hero {
@@ -305,6 +306,10 @@ footer {
         height: 100vw;
         background: url('./images/mobile/image-header.jpg') bottom no-repeat; 
         background-size: cover;
+        #burger {
+            cursor: pointer;
+            // filter: opacity(0.3);
+        }
     }
     .egg, .glass, .transform-brand, .stand-out{
         background-size: cover;
@@ -336,6 +341,7 @@ footer {
 
         background-color: white;
         width: 80vw;
+
         ul {
             
             list-style: none;
@@ -343,7 +349,26 @@ footer {
 
             li {
                 margin: 0;
-                padding: 0;
+                padding: 1rem 1rem 3rem 1rem;
+                a {
+                    font-family: $barlow;
+                    color: $light;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+
+                    display: block;
+                    height: 3rem;
+                    padding: .8rem;
+                    border-radius: 3rem;
+                    
+                    background-color: none;
+                }
+                a:hover, a:active {
+                    color: black;
+                    text-transform: uppercase;
+                    font-family: $fraunces;
+                    background-color: $yellow;
+                }
             }
         }
         &::before {
@@ -357,7 +382,7 @@ footer {
             background: white;
             clip-path: polygon(100% 0, 0% 100%, 100% 100%);
         }
-        // display: none;
+        display: none;
     }
 
 
@@ -382,6 +407,7 @@ footer {
         
         background: url('./images/desktop/image-header.jpg') bottom no-repeat; 
         background-size: cover;
+        
     }
 
     // url to desktop bg !!!!!!!!!!
