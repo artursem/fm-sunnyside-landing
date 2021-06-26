@@ -93,7 +93,7 @@ header {
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(50px);
+                transform: translateY(40px);
             }
             100% {
                 transform: translateY(0);
@@ -110,12 +110,10 @@ header {
 
 .egg {
     grid-area: egg;
-    background: url('./images/mobile/image-transform.jpg') center center no-repeat;
 }
 
 .glass {
     grid-area: glass;
-    background: url('./images/mobile/image-stand-out.jpg') center center no-repeat;
 }
 
 .transform-brand, .stand-out {
@@ -182,7 +180,7 @@ header {
 
 .graphic-design {
     grid-area: design;
-    background: url('./images/mobile/image-graphic-design.jpg') top center no-repeat;
+
     color: $cyan;
     p {
         color: $cyan;
@@ -191,8 +189,6 @@ header {
 
 .photography {
     grid-area: photography;
-
-    background: url('./images/mobile/image-photography.jpg') top center no-repeat;
     color: $blue;
     p {
         color: $blue;
@@ -324,6 +320,7 @@ footer {
     .egg, .glass, .transform-brand, .stand-out{
         background-size: cover;
         height: 100vw;
+        width: 100vw;
     }
     .graphic-design, .photography {
         background-size: cover;
@@ -407,7 +404,7 @@ footer {
 
 
     .egg {
-        background: url('./images/mobile/image-transform.jpg') center center no-repeat;
+        background: $yellow url('./images/mobile/image-transform.jpg') center center no-repeat;
     }
     
     .glass {

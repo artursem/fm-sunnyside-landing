@@ -63,7 +63,7 @@ header .hero #arrow {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(40px);
   }
   100% {
     transform: translateY(0);
@@ -76,12 +76,10 @@ header .hero #arrow {
 
 .egg {
   grid-area: egg;
-  background: url("./images/mobile/image-transform.jpg") center center no-repeat;
 }
 
 .glass {
   grid-area: glass;
-  background: url("./images/mobile/image-stand-out.jpg") center center no-repeat;
 }
 
 .transform-brand, .stand-out {
@@ -142,7 +140,6 @@ header .hero #arrow {
 
 .graphic-design {
   grid-area: design;
-  background: url("./images/mobile/image-graphic-design.jpg") top center no-repeat;
   color: #25564b;
 }
 .graphic-design p {
@@ -151,7 +148,6 @@ header .hero #arrow {
 
 .photography {
   grid-area: photography;
-  background: url("./images/mobile/image-photography.jpg") top center no-repeat;
   color: #19536b;
 }
 .photography p {
@@ -256,6 +252,7 @@ footer .footer__socials a {
   .egg, .glass, .transform-brand, .stand-out {
     background-size: cover;
     height: 100vw;
+    width: 100vw;
   }
 
   .graphic-design, .photography {
@@ -340,7 +337,7 @@ footer .footer__socials a {
   }
 
   .egg {
-    background: url("./images/mobile/image-transform.jpg") center center no-repeat;
+    background: #fad400 url("./images/mobile/image-transform.jpg") center center no-repeat;
   }
 
   .glass {
