@@ -53,7 +53,7 @@ header .hero img {
 header .hero #arrow {
   position: absolute;
   top: max(15rem, 25vw);
-  left: calc(50vw - 54px);
+  left: calc(50vw - 62px);
   z-index: 1;
   animation: arran 3s infinite;
 }
