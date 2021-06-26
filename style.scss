@@ -441,7 +441,7 @@ footer {
     }
     header {
         padding: .5rem;
-        min-height: 50vw;
+        height: min(800px, 50vw);
         background: url('./images/desktop/image-header.jpg') bottom no-repeat; 
         background-size: cover;
     }
