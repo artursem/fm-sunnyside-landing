@@ -391,6 +391,9 @@ footer .footer__socials a {
   .graphic-design, .photography {
     background-size: cover;
   }
+  .graphic-design p, .photography p {
+    min-height: 150px;
+  }
 
   .images {
     height: 25vw;

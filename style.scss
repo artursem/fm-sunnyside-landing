@@ -467,6 +467,9 @@ footer {
     }
     .graphic-design, .photography {
         background-size: cover;
+        p {
+            min-height: 150px;
+        }
     }
     
     .images {
