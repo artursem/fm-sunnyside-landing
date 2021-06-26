@@ -55,13 +55,14 @@ h1, h2, h3 {
 
 header {
     grid-area: header;
+
     .topbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-
+        
         color: white;
 
         img {
@@ -71,6 +72,7 @@ header {
     }
 
     .hero {
+
         h1 {
             color: white;
             text-transform: uppercase;
@@ -83,6 +85,9 @@ header {
         }
 
         #arrow {
+            position: absolute;
+            top: max(15rem, 25vw);
+            left: calc(50vw - 54px);
             z-index: 1;
             animation: arran 3s infinite;
 
@@ -436,10 +441,9 @@ footer {
     }
     header {
         padding: .5rem;
-        
+        min-height: 50vw;
         background: url('./images/desktop/image-header.jpg') bottom no-repeat; 
         background-size: cover;
-        
     }
 
     .graphic-design {
