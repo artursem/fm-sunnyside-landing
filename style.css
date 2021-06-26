@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 :root {
@@ -17,16 +17,10 @@ body {
   min-height: 100vh;
   display: grid;
   gap: 0;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 body > * {
   text-align: center;
-}
-
-div, section, header, footer {
-  scroll-snap-align: start;
 }
 
 h1, h2, h3 {

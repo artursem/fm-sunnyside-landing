@@ -23,7 +23,7 @@ $lightblue: hsl(210, 4%, 67%);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 :root {
@@ -39,9 +39,6 @@ body {
 
     display: grid;
     gap: 0;
-
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
 }
 
 body>* {
@@ -49,7 +46,6 @@ body>* {
 }
 
 div, section, header, footer {
-    scroll-snap-align: start;
     // border: 1px dashed yellowgreen; // ######################
 }
 
