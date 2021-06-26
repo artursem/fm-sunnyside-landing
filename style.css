@@ -55,6 +55,20 @@ header .hero h1 {
 header .hero img {
   padding: 2rem;
 }
+header .hero #arrow {
+  animation: arran 3s infinite;
+}
+@keyframes arran {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .egg, .glass {
   background-size: cover;
@@ -278,6 +292,7 @@ footer .footer__socials a {
     top: 6rem;
     left: 0;
     right: 0;
+    z-index: 1;
     margin-right: auto;
     margin-left: auto;
     text-align: center;

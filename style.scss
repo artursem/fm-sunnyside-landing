@@ -83,7 +83,21 @@ header {
         img {
             padding: 2rem;
 
-            // arrow animation !!!!!!!!!!!!!!!!!
+        }
+
+        #arrow {
+            animation: arran 3s infinite;
+        }
+        @keyframes arran {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
     }
 }
@@ -334,6 +348,7 @@ footer {
         top: 6rem;
         left: 0;
         right: 0;
+        z-index: 1;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
