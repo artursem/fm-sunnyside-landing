@@ -352,7 +352,7 @@ footer {
         margin-right: auto;
         margin-left: auto;
         text-align: center;
-        
+        z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -368,11 +368,11 @@ footer {
 
             li {
                 margin: 0;
-                padding: 1rem 1rem 3rem 1rem;
+                padding: .5rem .5rem 3rem .5rem;
                 a {
                     font-family: $barlow;
                     color: $light;
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                     text-decoration: none;
 
                     display: block;
@@ -400,7 +400,6 @@ footer {
             width: 2rem;
             background: white;
             clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-            z-index: 0;
         }
         overflow: visible;
         display: none;
