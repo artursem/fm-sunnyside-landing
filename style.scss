@@ -23,6 +23,7 @@ $lightblue: hsl(210, 4%, 67%);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow-y: hidden;
 }
 
 :root {
@@ -86,7 +87,9 @@ header {
         }
 
         #arrow {
+            z-index: 1;
             animation: arran 3s infinite;
+
         }
         @keyframes arran {
             0% {
@@ -311,6 +314,7 @@ footer {
         background: url('./images/mobile/image-header.jpg') bottom no-repeat; 
         background-size: cover;
         #burger {
+            margin-right: 1rem;
             border: none;
             background: none;
             cursor: pointer;
@@ -345,7 +349,6 @@ footer {
         top: 6rem;
         left: 0;
         right: 0;
-        z-index: 1;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
@@ -397,7 +400,9 @@ footer {
             width: 2rem;
             background: white;
             clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            z-index: 0;
         }
+        overflow: visible;
         display: none;
     }
 

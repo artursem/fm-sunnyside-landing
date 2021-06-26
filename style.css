@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-y: hidden;
 }
 
 :root {
@@ -56,6 +57,7 @@ header .hero img {
   padding: 2rem;
 }
 header .hero #arrow {
+  z-index: 1;
   animation: arran 3s infinite;
 }
 @keyframes arran {
@@ -244,6 +246,7 @@ footer .footer__socials a {
     background-size: cover;
   }
   header #burger {
+    margin-right: 1rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -289,7 +292,6 @@ footer .footer__socials a {
     top: 6rem;
     left: 0;
     right: 0;
-    z-index: 1;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -299,6 +301,7 @@ footer .footer__socials a {
     align-items: center;
     background-color: white;
     width: 80vw;
+    overflow: visible;
     display: none;
   }
   nav ul {
@@ -334,6 +337,7 @@ footer .footer__socials a {
     width: 2rem;
     background: white;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    z-index: 0;
   }
 
   .egg {
